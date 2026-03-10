@@ -1,4 +1,4 @@
-# Vystra — AI-Powered Video Search & Insights
+# Vystra — Find Any Moment Inside Any Video, Instantly
 
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
 [![Groq](https://img.shields.io/badge/groq-integrated-purple.svg)](#)
@@ -6,9 +6,33 @@
 [![pgvector](https://img.shields.io/badge/pgvector-enabled-lightgrey.svg)](#)
 [![Status](https://img.shields.io/badge/status-active-brightgreen.svg)](#)
 
-Vystra converts uploaded video content into searchable, vector-indexed segments. By leveraging AI-driven transcription, semantic vector search, and structured insights, Vystra enables users to discover specific moments and actionable summaries across their video library.
+**🔴 Live Demo → [vystra.vercel.app](https://vystra.vercel.app)**  
+**📂 Portfolio → [hussnainali.me](https://www.hussnainali.me)**
 
 ---
+
+## The Problem
+
+Video is the fastest-growing content format — but it's completely unsearchable.
+You can't `Ctrl+F` a 2-hour meeting recording. You can't find the exact 
+moment a product decision was made across 50 onboarding videos. 
+Timestamps and manual tagging don't scale.
+
+**Vystra fixes this.** Upload any video. Search it like a document.
+
+---
+
+## What It Does
+
+Vystra ingests video files, extracts and transcribes audio using 
+Whisper-class models, generates semantic vector embeddings, and stores 
+them in PostgreSQL with pgvector HNSW indexing. Users can then search 
+across their entire video library in natural language and get back the 
+exact segment — with timestamp — in under 300ms.
+
+> "Show me every moment where pricing was discussed."  
+> "Find where the deployment process was explained."  
+> "When did they mention the Q3 deadline?"
 
 ## Table of Contents
 
